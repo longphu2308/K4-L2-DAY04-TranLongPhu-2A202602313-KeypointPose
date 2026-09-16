@@ -67,7 +67,7 @@ rẻ hơn bắt ở phút 130.
 5. Export thử: **Export -> COCO Keypoints 1.0**. Giải nén, rồi:
 
 ```bash
-python3 tools/coco_kp_to_yolo_pose.py --coco <file>.json --out dataset/labels/train
+python3 tools/coco_kp_to_yolo_pose.py --coco person_keypoints_default.json --out dataset/labels/train
 python3 tools/check_pose_labels.py --images dataset/images/train --labels dataset/labels/train
 python3 tools/visualize_pose.py --images dataset/images/train \
     --labels dataset/labels/train --out outputs/vis_train
